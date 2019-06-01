@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+APPPATH	public/index.php	/^define('APPPATH',ROOTPATH . '\/application');$/;"	d
+Bootstrap	application/Bootstrap.php	/^class Bootstrap extends Yaf\\Bootstrap_Abstract$/;"	c
+IndexController	application/controllers/Index.php	/^class IndexController extends Yaf_Controller_Abstract$/;"	c
+MODULEPATH	public/index.php	/^define('MODULEPATH',APPPATH . '\/modules');$/;"	d
+ROOTPATH	public/index.php	/^define('ROOTPATH',realpath(dirname(__DIR__)));$/;"	d
+TPLPATH	public/index.php	/^define('TPLPATH',APPPATH . '\/views');$/;"	d
+WWWPATH	public/index.php	/^define('WWWPATH',ROOTPATH . '\/public');$/;"	d
+app	public/index.php	/^$app = new Yaf_Application(ROOTPATH."\/conf\/application.ini");$/;"	v
