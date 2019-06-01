@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2018-10-11 21:31:28
-         compiled from "/root/devspace/yaf_Demon/application/views/hk/index/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:19931557765b7bd0c062c987-85838074%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.8, created on 2019-06-01 11:55:38
+         compiled from "/root/devspace/gowork/src/github.com/longlong202/desertstar/application/views/hk/index/index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1676751275cf1f73ac471b0-59924436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '0eba55d42a8a90c43563f4c93f0d1c2cccb32390' => 
+    '0b0b750933cbda9cfc34c1b03269a1082fd79cb2' => 
     array (
-      0 => '/root/devspace/yaf_Demon/application/views/hk/index/index.tpl',
+      0 => '/root/devspace/gowork/src/github.com/longlong202/desertstar/application/views/hk/index/index.tpl',
       1 => 1539264696,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19931557765b7bd0c062c987-85838074',
+  'nocache_hash' => '1676751275cf1f73ac471b0-59924436',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5b7bd0c062e9c8_28195933',
   'variables' => 
   array (
     'data' => 0,
@@ -24,8 +22,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'res' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_5cf1f73ac50450_64447081',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b7bd0c062e9c8_28195933')) {function content_5b7bd0c062e9c8_28195933($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5cf1f73ac50450_64447081')) {function content_5cf1f73ac50450_64447081($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">

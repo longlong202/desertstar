@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2018-08-21 18:02:38
-         compiled from "/root/devspace/yaf_Demon/application/views/qixi/love/lovejessie.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15418298525b7be33ed3d306-58727978%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.8, created on 2019-06-01 11:55:23
+         compiled from "/root/devspace/gowork/src/github.com/longlong202/desertstar/application/views/qixi/love/lovejessie.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:13534934795cf1f72b33db76-47327722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '749dcb8966c0761acb6c61e5f42491221e8a75d7' => 
+    'd096e72c1c1d2e246772fc9dea3f0d2b01ca7950' => 
     array (
-      0 => '/root/devspace/yaf_Demon/application/views/qixi/love/lovejessie.tpl',
+      0 => '/root/devspace/gowork/src/github.com/longlong202/desertstar/application/views/qixi/love/lovejessie.tpl',
       1 => 1534585915,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15418298525b7be33ed3d306-58727978',
+  'nocache_hash' => '13534934795cf1f72b33db76-47327722',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_5b7be33ed3f905_35769548',
+  'unifunc' => 'content_5cf1f72b33ec34_81543440',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b7be33ed3f905_35769548')) {function content_5b7be33ed3f905_35769548($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_5cf1f72b33ec34_81543440')) {function content_5cf1f72b33ec34_81543440($_smarty_tpl) {?><!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">

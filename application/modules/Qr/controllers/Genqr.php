@@ -1,19 +1,27 @@
 <?php
+/*
+ *modules/controller/action 三级目录就会进入modules
+ *controller/action 二级目录就会进入controllers
+ */
+class GenqrController extends BaseController
+{/*{{{*/
 
-class QrcodeController extends BaseController
-{
-    public function getQRcodeAction()
-    {
+    public function indexAction()
+    {/*{{{*/
         $content = self::genQrcode("http://116.196.106.8/qixi/love/loveJessie");
         //$content = self::genQrcode("http://116.196.106.8/hk/shopping/index");
 
         $data =array(
             'content'=>$content,
         );
-//        $this->renderTpl($data);
-        $this->getView()->assign($data);
+        //$this->renderJson($data);//输出json
+        //var_dump($this->getView());
+        //$this->getView()->assign($data);
+        $this->getView()->assign('pic',$content);
+        $this->getView()->display('index.tpl');
 //        $this->getView()->assign("content",$content);
-    }
+
+    }/*}}}*/
 
     static public function genQrcode($url='')
     {/*{{{*/
@@ -50,9 +58,8 @@ class QrcodeController extends BaseController
         imagepng($QR,WWWPATH.'/img/qrcode.png');
         imagedestroy($QR);
         imagedestroy($logo);
-        return '<img src="../img/qrcode.png" alt="欢迎Jessie">';
+        return '../../img/qrcode.png';
 
     }/*}}}*/
-
-}
+}/*}}}*/
 ?>
