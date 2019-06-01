@@ -8,16 +8,15 @@ class ErrorController extends BaseController
     }
     public function errorAction($exception)
     {/*{{{*/
-        echo "<pre><h3>出错提示：</h3><br></pre>";
         if($exception instanceof Yaf_Exception_LoadFailed){
-            $msg = "加载异常，您访问的地址不存在";
+            $msg = "url loading error";
             print_r($exception);
             exit($msg);
         }elseif($exception instanceof Yaf_Exception){
-            $msg = "系统繁忙";
+            $msg = "system error";
             exit($msg);
         }else{
-            echo "!!!调用至此!!!";
+            echo "unknow error";
             print_r($exception);
         }
         exit;
