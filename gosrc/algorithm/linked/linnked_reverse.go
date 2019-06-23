@@ -12,7 +12,7 @@ package main
 import (
 	"fmt"
 	. "github.com/isdamir/gotype"
-	)
+)
 
 //带头结点的逆序
 func Reverse(node *LNode)  {
@@ -32,11 +32,32 @@ func Reverse(node *LNode)  {
 	node.Next = pre
 }
 
+//方法二，递归实现
+func RecursiveReverseChild(node *LNode) *LNode  {
+	if node == nil || node.Next == nil {//判断是否为最后一次递归
+		return node
+	}
+	newHead := RecursiveReverseChild(node.Next)//递归下一个 最后一遍4->5时，新的head即5，node.Next调用的时候返回的是node
+	//1-2-3-4-5 最后一次遍历是node 4
+	//4->5 转换成5->4
+	node.Next.Next = node //node此时为4,则node->next为5，node->next->next 即5->4,然后4->nil,即传入4->5，回传5->4->nil
+	node.Next = nil
+	return newHead
+}
+
+func RecursiveReverse(node *LNode)  {
+	firstNode := node.Next //从1开始递归
+	//递归调用
+	newHead := RecursiveReverseChild(firstNode)
+	node.Next = newHead
+}
+
 func main()  {
 	head := &LNode{}
 	fmt.Println("就地逆序")
 	CreateNode(head,8)
 	PrintNode("逆序前：",head)
-	Reverse(head)
+	//Reverse(head) //方法一
+	RecursiveReverse(head)//方法二
 	PrintNode("逆序后:",head)
 }
