@@ -10,7 +10,10 @@ import (
 
 func main()  {
 	arr := []int{1,3,4,2,5,3}
-	fmt.Println("异或法")
+	//fmt.Println("异或法")
+	//fmt.Println(FindDupByXOR(arr))
+
+	fmt.Println("数据映射法")
 	fmt.Println(FindDupByXOR(arr))
 
 }
@@ -31,4 +34,35 @@ func FindDupByXOR(arr []int) (int) {
 		result ^=i
 	}
 	return result
+}
+
+//数据映射法
+func FindDupByMap(arr []int) (int)  {
+	if arr == nil {
+		return -1
+	}
+
+	len :=len(arr)
+	index := 0
+	i :=0
+	for true {
+		if arr[i] >= len {
+			return -1
+		}
+
+		if arr[index] < 0 { //访问到负数就代表出现过
+			break
+		}
+
+		//访问过的进行标记
+		arr[index] *= -1
+		index = arr[index] * -1
+		if index > len {
+			fmt.Println("数组中有违法数字")
+			return -1
+		}
+	}
+
+	return index
+
 }
