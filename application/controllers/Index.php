@@ -13,4 +13,14 @@ class IndexController extends BaseController
 
         $this->renderJson($a);//输出json
     }
+
+    public function zeusAction()
+    {
+//        $this->getView()->assign("content","Hello XXX");
+        $a=array(
+            'zeus'=>"jacob",
+        );
+
+        $this->renderJson($a);//输出json
+    }
 }
