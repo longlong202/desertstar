@@ -11,7 +11,8 @@ class IndexController extends BaseController
             'age'=>18,
         );
 
-        $this->renderJson($a);//输出json
+//        $this->renderJson($a);//输出json
+        $this->renderTpl();
     }
 
     public function zeusAction()
