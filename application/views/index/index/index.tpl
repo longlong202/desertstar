@@ -34,7 +34,7 @@
 
 <script type="module">
 
-    import * as THREE from './js/threejs/build/three.module.js';
+    import * as THREE from './js/build/three.module.js';
 
     import Stats from './js/threejs/jsm/libs/stats.module.js';
     import { GUI } from './js/threejs/jsm/libs/dat.gui.module.js';
